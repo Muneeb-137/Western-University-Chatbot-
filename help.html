@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Sample / Help</title>
+    <link rel="stylesheet" type="text/css" href="stylehelp.css" />
+    <script src="https://kit.fontawesome.com/5539706a08.js" crossorigin="anonymous"></script>
+    <script src = "main.js"></script>
+    
+</head>
+
+<body>
+    <div id="table1"> 
+    
+        <table id="table1" style="width: 1360px;">
+            <tbody>
+                <tr>
+                <td style="width: 91px;right:10px;position: relative;"><img class ="message-box" src="images/messageboxupdate.png" alt="Dialog Box" height="50" /></td>
+                <td style="width: 128px;">
+                <h4 style ="right:40px;position: relative;">WesternChatBot</h4>
+                <td style="width: 1441px; text-align: right;right: -75px;position: relative;"><img class = "western-loogo" src="images/westernupdatedlogo.png" alt="westernlogo" height="150" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>&nbsp;</p>
+    
+    <div id="table2">
+        <table style="height: 82px; margin-left: auto; margin-right: auto; background-color: rgb(88, 44, 131);" border="4" width="" cellpadding="4">
+            <tbody>
+                <tr>
+                <td style="width: 554px;">
+                <h2 style="text-align: center;"><span style="color: whitesmoke;"><a style="color: whitesmoke;" title="HOMEPAGE" href="index.html">HOMEPAGE</a></span></h2>
+               </td>
+                <td style="width: 554px; text-align: center;">
+                <h2><span style="color: whitesmoke;"><a style="color: whitesmoke;" href="help.html"><strong>HELP/ASSISTANCE</strong></a></span></h2>
+                </td>
+                <td style="width: 554px; text-align: center;">
+                <h2><span style="color: whitesmoke;"><a style="color: whitesmoke;" href="about.html"><strong>ABOUT/FAQS</strong></a></span></h2>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    <body>
+        <div class = "register">
+        <h6>SUBMIT YOUR TICKET</h6>
+        
+    
+
+    <form action="https://formsubmit.co/westernchatbot24@gmail.com" method="POST">
+    <div class ="row">
+    <div class = "input-one">
+        <input type = "text" id = "name" required>
+        <label for = "name"> <i class="fa-solid fa-user"></i> Enter Your First Name</label>  
+    </div>
+    <div class = "input-one">
+        <input type = "text" id = "lastname" required>
+        <label for = "lastname"> <i class="fa-solid fa-user"></i> Enter Your Last Name</label> 
+        </div>
+        </div>
+
+        <div class ="row-four">
+            <div data-role="main" class="ui-content">
+                <fieldset data-role="controlgroup">
+            
+                
+            <legend>Choose Your Gender</legend>
+            
+            
+                    <input class = "first-one"  type="radio" name = "gender" value ="male" id ="male1" required>Male 
+                    
+                    <input class = "first-one"  type="radio" name = "gender" value="female" id ="male2" required >Female  <i class="fa-solid fa-restroom"></i>
+
+                    </div>
+                    
+                    <div class = "input-one">
+                        <input type = "date" id = "dateofbirth" required>
+                        <label class ="birth-one" for = "dateofbirth"> <i class="fa-solid fa-calendar"></i> Enter Date of Birth</label>
+                    </div> 
+                </div>  
+        
+                </fieldset>
+                
+           
+                    
+           
+
+    <div class = "row-two">
+    <div class = "input-one">
+        <input type = "tel" id = "number" title="The number must be nine-digits long" pattern="[0-9]{9}" required>
+        <label for = "number"> <i class="fa-regular fa-id-card"></i> Enter Your Western Student #</label>
+    </div> 
+    <div class = "input-one">
+        <input type = "text" id = "userid" required>
+        <label for = "userid"> <i class="fa-regular fa-id-card"></i> Enter your Western User ID</label>
+    </div> 
+</div>
+
+<div class = "row-three">
+    
+<div class = "input-one">
+        <input type = "email" id = "email" required>
+        <label for = "email"> <i class="fa-solid fa-envelope"></i> Enter Your Email Address</label>
+    </div>
+    <div class = "input-one">
+        <input type = "tel" id = "contact" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+        <label for = "contact"> <i class="fa-solid fa-phone"></i> Enter Your Phone Number</label>  
+   </div>
+</div>
+
+<div class = "input-one">
+    <textarea id="message" rows = "8" onclick="this.select()" required></textarea>
+    <label for = "message"> <i class="fa-solid fa-circle-question"></i> Enter Your Question</label>
+
+    <button type = "submit"> <i class="fa-sharp fa-solid fa-paper-plane"></i> SUBMIT</button>
+</form>
+    </div>
+</div>
+<script>
+    function submissionPrevention(x) {
+        x.preventDefault();
+    }
+</script>
+<script>
+$(document).on('keypress','#contact',function(e){
+    if($(e.target).prop('contact').length>=10){
+    if(e.keyCode!=32)
+    {return false} 
+    }})
+</script>
+
+
+</body>
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    <table id="table3" style="height: 41px; width: 1470px;">
+        <tbody>
+            <tr style="height: 41px;">
+                <td style="width: 50px; height: 41px; text-align: left;">&nbsp;</td>
+                
+                <td style="width: 640px; height: 41px; text-align: left;">
+                <p class="small" style="color: whitesmoke;">Western University (1878 - 2023)</p>
+                <p>&nbsp;</p>
+                <p class="small" style="color: whitesmoke;">1151 Richmond Street,</p>
+                <p class="small" style="color: whitesmoke;">London, Ontario, Canada N6A3K7&nbsp;</p>
+                <p class="small" style="color: whitesmoke;">Room 1120 Western Student Services Building</p>
+                <p class="small" style="color: whitesmoke;">Telephone: 519-661-2100</p>
+                <p>&nbsp;</p>
+                <p class="small" style="color: whitesmoke;"><a style="color: whitesmoke;" title="Contact Info" href="https://www.uwo.ca/about/contact.html" target="_blank" rel="noopener">Contact Us</a></p>
+                <p class="small" style="color: whitesmoke;"><a style="color: whitesmoke;" title="uwo" href="https://www.uwo.ca/" target="_blank" rel="noopener">Western University Main Website</a></p>
+                <p class="small" style="color: whitesmoke;"><a style="color: whitesmoke;" title="uwo" href="https://owl.uwo.ca/portal" target="_blank" rel="noopener">Owl student Website</a></p>
+                <p class="small" style="color: whitesmoke;"><a style="color: whitesmoke;" title="uwo" href="https://student.uwo.ca/psp/heprdweb/EMPLOYEE/SA/c/UWO_WISG.WSA_STDNT_CENTER.GBL?" target="_blank" rel="noopener">Student Portal</a></p>
+                </td>
+
+                <td style="width: 640px; height: 41px; text-align: right;">
+                <p>&nbsp;</p>
+                <a title="Western Facebook" href="https://www.facebook.com/WesternUniversity/" target="_blank" rel="noopener"><img src="images/facebook-circle-icon.png" alt="Facebook" /></a> <a title="Western Instagram" href="https://www.instagram.com/westernuniversity/" target="_blank" rel="noopener"><img src="images/instagram-circle-icon.png" alt="Instagram" /></a> <a title="IOS" href="https://www.apple.com/ca/app-store/" target="_blank" rel="noopener"><img src="images/appstore-circle-icon.png" alt="AppStore"  /></a> <a title="Western University" href="https://www.youtube.com/@WesternUniversity" target="_blank" rel="noopener"><img src="images/youtube-circle-icon.png" alt="Youtube"  /></a> <a title="LinkedIn" href="https://www.linkedin.com/school/westernuniversity/" target="_blank" rel="noopener"><img src="images/LinkedIn-circle-icon.png" alt="LinkedIn"  /></a>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p><br /><a title="Mustangs" href="https://westernmustangs.ca/" target="_blank" rel="noopener"><img class ="mustang-one" style="float: right;right:22px;position: relative;" src="images/Western_Ontario_Mustangs_logo.png" alt="Mustangs" height="90" /></a>&nbsp; &nbsp;</p>
+                </td>
+
+                
+            </tr>
+        </tbody>
+    
+    </table>
+</body> 
+</html>
